@@ -307,23 +307,24 @@ main .container .left .profile{
 }
 
 .middle .stories .story:nth-child(1){
-    background: url("/Images/screen-01.jpg") no-repeat center center/cover;
+    /* use .. to display background on the browser or github */
+    background: url("../Images/screen-01.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
-    background: url("/Images/screen-11.jpg") no-repeat center center/cover;
+    background: url("../Images/screen-11.jpg") no-repeat center center/cover;
     
 }
 .middle .stories .story:nth-child(3){
-    background: url("/Images/screen-22.png") no-repeat center center/cover;
+    background: url("../Images/screen-22.png") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4){
-    background: url("/Images/screen-33.png") no-repeat center center/cover;
+    background: url("../Images/screen-33.png") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(5){
-    background: url("/Images/screen-44.png") no-repeat center center/cover;
+    background: url("../Images/screen-44.png") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(6){
-    background: url("/Images/screen-55.png") no-repeat center center/cover;
+    background: url("../Images/screen-55.png") no-repeat center center/cover;
 }
 
 .middle .story .profile-pic{
