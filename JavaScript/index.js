@@ -8,13 +8,8 @@ const changeActiveItem = () => {
   });
 };
 
-// menuItem.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     changeActiveItem();
-//     item.classList.add('active');
-//   });
-// });
 
+let count = 0;
 menuItem.forEach((item) => {
   item.addEventListener("click", () => {
     changeActiveItem();
@@ -24,26 +19,21 @@ menuItem.forEach((item) => {
     } else {
       document.querySelector(".notification-popup").style.display = "block";
       document.querySelector(".notification-count").style.display = "none";
-      // setTimeout(() => {
-      //   document.querySelector('.notification-popup').style.display = 'none';
-      // }, 2000);
-      // if (item.id == 'notifications') {
-      //   item.addEventListener("click", (e)=>{
-      //     document.querySelector(".notification-popup").style.display = "none";
-      //     // console.log("hello");
-      //   }
-      //   )
-      // }
+      count++;
+      
     }
   });
 });
-// const closeNotification = (e) => {
-//   if (e.target.classList.contains("notification-popup")) {
-//     document.querySelector('.notification-popup').style.display = 'none';
-//   };
+let notificationn = document.querySelector('#notifications');
+notificationn.addEventListener('click', () => {
+  if (count == 2) {
+    console.log('hello');
+  document.querySelector('.notification-popup').style.display = 'none';
+  count = 0;
+}   
+})
 
-// }
-// document.querySelector('#notifications').addEventListener('click', closeNotification);
+
 
 // Messagees
 
